@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fgk(6^qymtzkx@67)th(1)aqvpa7$3p5dnx8%6i$1z8(cm27j=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'players.apps.PlayersConfig',
+    'matches.apps.MatchesConfig',
+    'leagues.apps.LeaguesConfig',
+    'ranks.apps.RanksConfig',
+    'clubs.apps.ClubsConfig',
 ]
 
 MIDDLEWARE = [
