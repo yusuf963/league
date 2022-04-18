@@ -1,1 +1,1 @@
-web: gunicorn house.wsgi
+web: gunicorn league.wsgi
